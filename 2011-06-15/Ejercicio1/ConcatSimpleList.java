@@ -6,6 +6,10 @@ public class ConcatSimpleList<T> extends ArrayList<T> implements SimpleList<T>{
 		this.list1 = list1;
 		this.list2 = list2;
 	}
+
+	public void append(T element){
+		list2.add(element);
+	}
 	
 	public Iterator<T> iterator(){
 		return new Iterator<T>(){
