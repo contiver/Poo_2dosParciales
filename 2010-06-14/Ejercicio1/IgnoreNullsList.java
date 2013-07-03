@@ -28,6 +28,7 @@ public class IgnoreNullsList<T> extends ArrayList<T> {
 					throw new IllegalStateException();
 				}
 				list.remove(lastNextIndex);
+				currentIndex--;
 				removeIsValid = false;
 			}
 		};
